@@ -1,16 +1,13 @@
 import React from "react";
-import SideBar from "./Views/Sidebar";
-import MainView from "./Views/MainView";
+import SideBar from "./MotifApp/Views/Sidebar";
 import MotifApp from "./MotifApp";
+import { MotifContainer } from "./styles";
 function Motif() {
-  //How the application sections are made.
   return (
-    <React.Fragment>
-      <MainView>
-        <MotifApp />
-      </MainView>
+    <MotifContainer>
+      <MotifApp />
       <SideBar />
-    </React.Fragment>
+    </MotifContainer>
   );
 }
 
